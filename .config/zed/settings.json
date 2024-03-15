@@ -34,6 +34,12 @@
         "diagnostics": true,
         "formatting": true
       }
+    },
+    "solargraph": {
+      "initialization_options": {
+        "diagnostics": true,
+        "formatting": true
+      }
     }
   },
   "terminal": {
