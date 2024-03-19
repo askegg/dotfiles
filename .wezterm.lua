@@ -42,6 +42,11 @@ config.keys = {
 		action = wezterm.action.ToggleFullScreen,
 	},
 	{
+		key = "0",
+		mods = "CTRL",
+		action = wezterm.action.ResetFontAndWindowSize,
+	},
+	{
 		-- Split window vertically
 		key = "|",
 		mods = "SHIFT|CTRL",

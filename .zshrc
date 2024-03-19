@@ -19,6 +19,7 @@ export PATH="/usr/local/sbin:$PATH"
 
 # Aliases
 alias vim="nvim"
+alias v="nvim"
 
 # Here is a trick to keep config files in Git.
 # Initialise an empty git repository: git init --bare $HOME/.myconf
