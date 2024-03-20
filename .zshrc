@@ -14,6 +14,12 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export PATH="/usr/local/sbin:$PATH"
 
+# For EZA ls command
+export FPATH="/usr/local/share/zsh/site-functions:$FPATH"
+alias ls="eza --icons"
+alias ll="eza --icons -lh"
+alias la="eza --icons -la"
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
