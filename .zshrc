@@ -8,7 +8,12 @@ COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="dd/mm/yyyy"
 
 # Which plugins would you like to load?
-plugins=(asdf tmux gh gem ruby rails)
+plugins=(asdf tmux gh gem ruby rails starship eza)
+zstyle ':omz:plugins:eza' 'icons' yes
+zstyle ':omz:plugins:eza' 'dirs-first' yes
+zstyle ':omz:plugins:eza' 'git-status' yes
+zstyle ':omz:plugins:eza' 'header' yes
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -17,14 +22,17 @@ export PATH="/usr/local/sbin:$PATH"
 # For EZA ls command
 export FPATH="/usr/local/share/zsh/site-functions:$FPATH"
 alias ls="eza --icons"
-alias ll="eza --icons -lh"
-alias la="eza --icons -la"
+alias ll="ls --git -lh"
+alias la="ls --git -la"
+alias lld="ll -D"
+alias lad="la -D"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Aliases
+# Always use NVim
 alias vim="nvim"
+alias vi="nvim"
 alias v="nvim"
 
 # Here is a trick to keep config files in Git.
