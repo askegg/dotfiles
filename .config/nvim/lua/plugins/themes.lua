@@ -1,11 +1,11 @@
 return {
   -- Add colour schemes
-  { "ellisonleao/gruvbox.nvim", name = "Gruvbox", priority = 100 },
-  { "Mofiqul/dracula.nvim", name = "dracula", priority = 1000 },
-  { "catppuccin/nvim", name = "catppuccin", priority = 100 },
-  { "marko-cerovac/material.nvim", name = "Material", priority = 100 },
+  { "ellisonleao/gruvbox.nvim", name = "Gruvbox", priority = 1000 },
+  { "Mofiqul/dracula.nvim", name = "Dracula", priority = 1000 },
+  { "catppuccin/nvim", name = "catppuccin", lazy = false, priority = 1000 },
+  { "marko-cerovac/material.nvim", name = "Material", priority = 1000 },
   { "rose-pine/neovim", name = "Rose Pine" },
-  { "folke/tokyonight.nvim", priority = 100 },
+  { "folke/tokyonight.nvim", lazy = false, priority = 1000, opts = {} },
   -- Load a default
   {
     "LazyVim/LazyVim",
