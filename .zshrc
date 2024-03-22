@@ -9,6 +9,7 @@ HIST_STAMPS="dd/mm/yyyy"
 
 # Which plugins would you like to load?
 plugins=(asdf tmux gh gem ruby rails starship eza)
+
 zstyle ':omz:plugins:eza' 'icons' yes
 zstyle ':omz:plugins:eza' 'dirs-first' yes
 zstyle ':omz:plugins:eza' 'git-status' yes
