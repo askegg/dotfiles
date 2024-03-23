@@ -31,7 +31,6 @@ disabled = false
 [os]
 style = "bg:#9A348E"
 disabled = false # Disabled by default
-# command_timeout = 1000
 
 [directory]
 style = "bg:#DA627D"
