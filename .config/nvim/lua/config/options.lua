@@ -7,6 +7,7 @@ opt.termguicolors = true
 
 -- Display a vertical line at the column width
 opt.cc = "+1"
+opt.signcolumn = "yes"
 
 -- Set the wrap widths
 opt.textwidth = 100

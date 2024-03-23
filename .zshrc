@@ -22,7 +22,7 @@ export PATH="/usr/local/sbin:$PATH"
 
 # For EZA ls command
 export FPATH="/usr/local/share/zsh/site-functions:$FPATH"
-alias ls="eza --icons"
+alias ls="eza --icons  --group-directories-first"
 alias ll="ls --git -lh"
 alias la="ls --git -la"
 alias lld="ll -D"
