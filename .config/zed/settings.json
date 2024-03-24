@@ -13,8 +13,9 @@
   "preferred_line_length": 100,
   "soft_wrap": "preferred_line_length",
   "tab_size": 2,
+  "format_on_save": "on",
   "copy_on_select": true,
-  "hover_popover_enabled": false,
+  "hover_popover_enabled": true,
   "vim_mode": false,
   "relative_line_numbers": false,
   "gutter": {
@@ -28,17 +29,27 @@
     "show_parameter_hints": true,
     "show_other_hints": true
   },
+  "language_overrides": {
+    "Ruby": {
+      "formatter": {
+        "external": {
+          "command": "standardrb",
+          "arguments": ["--fix", "--stdin", "ignored", "--stderr"]
+        }
+      }
+    }
+  },
   "lsp": {
     "ruby-lsp": {
       "initialization_options": {
         "diagnostics": true,
-        "formatting": true
+        "formatting": false
       }
     },
     "solargraph": {
       "initialization_options": {
-        "diagnostics": true,
-        "formatting": true
+        "diagnostics": false,
+        "formatting": false
       }
     }
   },
