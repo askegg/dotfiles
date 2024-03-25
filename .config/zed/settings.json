@@ -6,7 +6,7 @@
   "base_keymap": "VSCode",
   "theme": "Dracula",
   "buffer_font_family": "JetBrains Mono",
-  "buffer_font_size": 14,
+  "buffer_font_size": 13,
   "line_height": "1.2",
   "ui_font_family": "JetBrains Mono",
   "ui_font_size": 13,
