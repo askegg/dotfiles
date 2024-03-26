@@ -8,6 +8,7 @@ HIST_STAMPS="dd/mm/yyyy"
 
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
+export RUBY_CONFIGURE_OPTS=--enable-yjit
 
 # Which plugins would you like to load?
 plugins=(asdf tmux gh gem ruby rails starship eza)
@@ -32,6 +33,7 @@ alias lad="la -D"
 # Configure command aliases
 alias v="nvim"
 alias lg="lazygit"
+alias z="zed ."
 
 # Here is a trick to keep config files in Git.
 # Initialise an empty git repository: git init --bare $HOME/.myconf
