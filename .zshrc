@@ -1,21 +1,23 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+source $ZSH/oh-my-zsh.sh
 
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="false"
 COMPLETION_WAITING_DOTS="true"
-
 HIST_STAMPS="dd/mm/yyyy"
+
+# Compilation flags
+export ARCHFLAGS="-arch x86_64"
 
 # Which plugins would you like to load?
 plugins=(asdf tmux gh gem ruby rails starship eza)
 
+# Set some Eza styles
 zstyle ':omz:plugins:eza' 'icons' yes
 zstyle ':omz:plugins:eza' 'dirs-first' yes
 zstyle ':omz:plugins:eza' 'git-status' yes
 zstyle ':omz:plugins:eza' 'header' yes
-
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 export PATH="/usr/local/sbin:$PATH"
@@ -28,15 +30,8 @@ alias la="ls --git -la"
 alias lld="ll -D"
 alias lad="la -D"
 
-# Compilation flags
-export ARCHFLAGS="-arch x86_64"
-
-# Always use nvim
-alias vim="nvim"
-alias vi="nvim"
+# Configure command aliases
 alias v="nvim"
-
-# Alias for LazyGit
 alias lg="lazygit"
 
 # Here is a trick to keep config files in Git.
@@ -51,4 +46,5 @@ alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 
 # I'm using starship to customise the prompt
 # See https://starship.rs
+export STARSHIP_LOG="error" # I don't want to see warnings, just errors.
 eval "$(starship init zsh)"
