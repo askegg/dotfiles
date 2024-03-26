@@ -1,6 +1,5 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-source $ZSH/oh-my-zsh.sh
 
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="false"
@@ -43,6 +42,9 @@ alias lg="lazygit"
 # config commit -m "Added .zshrc"
 # config push
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
+
+# Load zshrc
+source $ZSH/oh-my-zsh.sh
 
 # I'm using starship to customise the prompt
 # See https://starship.rs
