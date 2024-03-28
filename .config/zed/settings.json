@@ -29,6 +29,9 @@
     "show_parameter_hints": true,
     "show_other_hints": true
   },
+  "file_types": {
+    "Ruby": ["Gemfile", "Gemfile.jumpstart", "Brewfile"]
+  },
   "language_overrides": {
     "Ruby": {
       "formatter": {
