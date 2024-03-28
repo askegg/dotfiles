@@ -10,6 +10,9 @@ HIST_STAMPS="dd/mm/yyyy"
 export ARCHFLAGS="-arch x86_64"
 export RUBY_CONFIGURE_OPTS=--enable-yjit
 
+# Load zshrc
+source $ZSH/oh-my-zsh.sh
+
 # Which plugins would you like to load?
 plugins=(asdf tmux gh gem ruby rails starship eza)
 
@@ -44,9 +47,6 @@ alias z="zed ."
 # config commit -m "Added .zshrc"
 # config push
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
-
-# Load zshrc
-source $ZSH/oh-my-zsh.sh
 
 # I'm using starship to customise the prompt
 # See https://starship.rs
