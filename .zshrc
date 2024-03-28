@@ -10,9 +10,6 @@ HIST_STAMPS="dd/mm/yyyy"
 export ARCHFLAGS="-arch x86_64"
 export RUBY_CONFIGURE_OPTS=--enable-yjit
 
-# Load zshrc
-source $ZSH/oh-my-zsh.sh
-
 # Which plugins would you like to load?
 plugins=(asdf tmux gh gem ruby rails starship eza)
 
@@ -24,6 +21,9 @@ zstyle ':omz:plugins:eza' 'header' yes
 
 # User configuration
 export PATH="/usr/local/sbin:$PATH"
+
+# Load zshrc
+source $ZSH/oh-my-zsh.sh
 
 # For EZA ls command
 export FPATH="/usr/local/share/zsh/site-functions:$FPATH"
