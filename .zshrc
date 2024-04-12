@@ -21,8 +21,8 @@ zstyle ':omz:plugins:eza' 'header' yes
 
 # User configuration
 export PATH="/usr/local/sbin:$PATH"
+export EDITOR="zed"
 
-# Load zshrc
 source $ZSH/oh-my-zsh.sh
 
 # For EZA ls command
