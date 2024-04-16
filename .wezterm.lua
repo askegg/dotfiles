@@ -21,18 +21,18 @@ config.window_padding = {
 -- Font settings
 config.font = wezterm.font("JetBrains Mono")
 config.font_size = 13.0
-config.line_height = 1.0
+config.line_height = 1.2
 
 -- Use a visual bell rather than the audio version
 config.audible_bell = "Disabled"
 config.visual_bell = {
   fade_in_duration_ms = 0,
   fade_out_function = "EaseOut",
-  fade_out_duration_ms = 80,
+  fade_out_duration_ms = 50,
 }
 config.colors = {
-  -- Dracula purple
-  visual_bell = "#BD93F9",
+  -- Dark Violet
+  visual_bell = "#5e0087",
 }
 
 config.keys = {
