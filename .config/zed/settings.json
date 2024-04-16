@@ -43,16 +43,10 @@
     }
   },
   "lsp": {
-    "ruby-lsp": {
-      "initialization_options": {
-        "diagnostics": true,
-        "formatting": false
-      }
-    },
     "solargraph": {
       "initialization_options": {
-        "diagnostics": false,
-        "formatting": false
+        "diagnostics": true,
+        "formatting": true
       }
     }
   },

@@ -12,10 +12,10 @@ config.quit_when_all_windows_are_closed = false
 config.initial_rows = 40
 config.initial_cols = 140
 config.window_padding = {
-  left = 0,
-  right = 0,
-  top = 0,
-  bottom = 0,
+  left = 5,
+  right = 5,
+  top = 5,
+  bottom = 5,
 }
 
 -- Font settings
