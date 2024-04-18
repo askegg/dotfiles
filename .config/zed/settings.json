@@ -4,24 +4,30 @@
 // documentation: https://zed.dev/docs/configuring-zed
 {
   "base_keymap": "VSCode",
+  // UI
   "theme": "Dracula",
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_size": 13,
   "line_height": "1.2",
   "ui_font_family": "JetBrains Mono",
   "ui_font_size": 13,
+  // Code Formatting
   "preferred_line_length": 100,
   "soft_wrap": "preferred_line_length",
   "tab_size": 2,
   "format_on_save": "on",
-  "copy_on_select": true,
-  "hover_popover_enabled": true,
-  "vim_mode": false,
-  "relative_line_numbers": false,
   "gutter": {
     "line_numbers": true,
     "code_actions": true,
     "folds": true
+  },
+  "terminal": {
+    "dock": "right",
+    "copy_on_select": true
+  },
+  "tabs": {
+    "git_status": true,
+    "close_position": "left"
   },
   "inlay_hints": {
     "enabled": true,
@@ -29,35 +35,33 @@
     "show_parameter_hints": true,
     "show_other_hints": true
   },
+  // Helpers
+  "copy_on_select": true,
+  "hover_popover_enabled": true,
+  "vim_mode": false,
+  // Language Servers
   "file_types": {
     "Ruby": ["Gemfile", "Gemfile.jumpstart", "Brewfile"]
   },
-  "language_overrides": {
-    "Ruby": {
-      "formatter": {
-        "external": {
-          "command": "standardrb",
-          "arguments": ["--fix", "--stdin", "ignored", "--stderr"]
-        }
-      }
-    }
-  },
-  "lsp": {
-    "solargraph": {
-      "initialization_options": {
-        "diagnostics": true,
-        "formatting": true
-      }
-    }
-  },
-  "terminal": {
-    "dock": "right"
-  },
-  "assistant": {
-    "button": false,
-    "dock": "right",
-    "default_open_ai_model": "gpt-3.5-turbo-0613"
-  },
+  // "language_overrides": {
+  //   "Ruby": {
+  //     "formatter": {
+  //       "external": {
+  //         "command": "standardrb",
+  //         "arguments": ["--fix", "--stdin", "ignored", "--stderr"]
+  //       }
+  //     }
+  //   }
+  // },
+  // "lsp": {
+  //   "solargraph": {
+  //     "initialization_options": {
+  //       "diagnostics": true,
+  //       "formatting": true
+  //     }
+  //   }
+  // },
+  // Disable buttons
   "chat_panel": {
     "button": false
   },
@@ -67,11 +71,13 @@
   "collaboration_panel": {
     "button": false
   },
-  "tabs": {
-    "git_status": true,
-    "close_position": "left"
-  },
+  // Co-Pilot
   "features": {
     "copilot": false
+  },
+  "assistant": {
+    "button": false,
+    "dock": "right",
+    "default_open_ai_model": "gpt-3.5-turbo-0613"
   }
 }

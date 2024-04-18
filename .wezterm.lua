@@ -8,7 +8,7 @@ config.color_scheme = "Dracula (Official)"
 -- Initial window settings
 config.native_macos_fullscreen_mode = true
 config.hide_tab_bar_if_only_one_tab = true
-config.quit_when_all_windows_are_closed = false
+config.quit_when_all_windows_are_closed = true
 config.initial_rows = 40
 config.initial_cols = 140
 config.window_padding = {

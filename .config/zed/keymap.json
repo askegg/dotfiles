@@ -2,7 +2,8 @@
   {
     "context": "Editor",
     "bindings": {
-      "ctrl-shift-f": "editor::FindAllReferences"
+      "ctrl-shift-f": "editor::FindAllReferences",
+      "shift-ctrl-p": "markdown::OpenPreviewToTheSide"
     }
   }
 ]
