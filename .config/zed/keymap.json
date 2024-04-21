@@ -2,6 +2,7 @@
   {
     "context": "Editor",
     "bindings": {
+      "cmd-shift-d": "editor::DuplicateLineDown",
       "ctrl-shift-f": "editor::FindAllReferences",
       "shift-ctrl-p": "markdown::OpenPreviewToTheSide"
     }

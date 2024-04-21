@@ -12,8 +12,8 @@ config.quit_when_all_windows_are_closed = true
 config.initial_rows = 40
 config.initial_cols = 140
 config.window_padding = {
-  left = 5,
-  right = 5,
+  left = 10,
+  right = 10,
   top = 5,
   bottom = 5,
 }

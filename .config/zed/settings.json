@@ -43,24 +43,24 @@
   "file_types": {
     "Ruby": ["Gemfile", "Gemfile.jumpstart", "Brewfile"]
   },
-  // "language_overrides": {
-  //   "Ruby": {
-  //     "formatter": {
-  //       "external": {
-  //         "command": "standardrb",
-  //         "arguments": ["--fix", "--stdin", "ignored", "--stderr"]
-  //       }
-  //     }
-  //   }
-  // },
-  // "lsp": {
-  //   "solargraph": {
-  //     "initialization_options": {
-  //       "diagnostics": true,
-  //       "formatting": true
-  //     }
-  //   }
-  // },
+  "language_overrides": {
+    "Ruby": {
+      "formatter": {
+        "external": {
+          "command": "standardrb",
+          "arguments": ["--fix", "--stdin", "ignored", "--stderr"]
+        }
+      }
+    }
+  },
+  "lsp": {
+    "solargraph": {
+      "initialization_options": {
+        "diagnostics": true,
+        "formatting": true
+      }
+    }
+  },
   // Disable buttons
   "chat_panel": {
     "button": false
