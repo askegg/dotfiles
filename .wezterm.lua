@@ -14,12 +14,12 @@ config.initial_cols = 140
 config.window_padding = {
   left = 10,
   right = 10,
-  top = 5,
-  bottom = 5,
+  top = 0,
+  bottom = 0,
 }
 
 -- Font settings
-config.font = wezterm.font("JetBrains Mono")
+config.font = wezterm.font("JetBrainsMono Nerd Font")
 config.font_size = 13.0
 config.line_height = 1.2
 
@@ -28,7 +28,7 @@ config.audible_bell = "Disabled"
 config.visual_bell = {
   fade_in_duration_ms = 0,
   fade_out_function = "EaseOut",
-  fade_out_duration_ms = 50,
+  fade_out_duration_ms = 40,
 }
 config.colors = {
   -- Dark Violet

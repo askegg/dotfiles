@@ -27,7 +27,7 @@ source $ZSH/oh-my-zsh.sh
 
 # For EZA ls command
 export FPATH="/usr/local/share/zsh/site-functions:$FPATH"
-alias ls="eza --icons  --group-directories-first"
+alias ls="eza --icons"
 alias ll="ls --git -lh"
 alias la="ls --git -la"
 alias lld="ll -D"
@@ -36,7 +36,7 @@ alias lad="la -D"
 # Configure command aliases
 alias v="nvim"
 alias lg="lazygit"
-alias z="zed ."
+alias z="zed"
 
 # Here is a trick to keep config files in Git.
 # Initialise an empty git repository: git init --bare $HOME/.myconf

@@ -6,10 +6,10 @@
   "base_keymap": "VSCode",
   // UI
   "theme": "Dracula",
-  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_family": "JetBrainsMono Nerd Font Mono",
   "buffer_font_size": 13,
   "line_height": "1.2",
-  "ui_font_family": "JetBrains Mono",
+  "ui_font_family": "JetBrainsMono Nerd Font",
   "ui_font_size": 13,
   // Code Formatting
   "preferred_line_length": 100,
@@ -43,16 +43,16 @@
   "file_types": {
     "Ruby": ["Gemfile", "Gemfile.jumpstart", "Brewfile"]
   },
-  "language_overrides": {
-    "Ruby": {
-      "formatter": {
-        "external": {
-          "command": "standardrb",
-          "arguments": ["--fix", "--stdin", "ignored", "--stderr"]
-        }
-      }
-    }
-  },
+  // "language_overrides": {
+  //   "Ruby": {
+  //     "formatter": {
+  //       "external": {
+  //         "command": "standardrb",
+  //         "arguments": ["--fix", "--stdin", "ignored", "--stderr"]
+  //       }
+  //     }
+  //   }
+  // },
   "lsp": {
     "solargraph": {
       "initialization_options": {
