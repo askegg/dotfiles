@@ -11,7 +11,7 @@ export ARCHFLAGS="-arch x86_64"
 export RUBY_CONFIGURE_OPTS=--enable-yjit
 
 # Which plugins would you like to load?
-plugins=(asdf tmux gh gem ruby rails starship eza)
+plugins=(asdf tmux gh gem ruby rails starship eza bundler)
 
 # Set some Eza styles
 zstyle ':omz:plugins:eza' 'icons' yes

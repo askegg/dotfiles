@@ -4,8 +4,15 @@
 # System
 ## Please install ASDF and Ruby first.
 
+## Install Homebrew
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 ## Git
 system "brew install git"
+
+## For easy upgrade of applications in casks
+## To use type "brew cu"
+system "brew tap buo/cask-upgrade"
 
 ## PostgreSQL
 system "brew install postgresql@16"
@@ -14,6 +21,9 @@ system "brew install postgresql@16"
 system "brew tap homebrew/cask-fonts"
 # system "brew install --cask font-jetbrains-mono"
 system "brew install --cask font-jetbrains-mono-nerd-font"
+
+## TailwindCSS
+system "brew install tailwindcss"
 
 # Applications
 
@@ -34,6 +44,7 @@ system "brew install starship"
 
 ## NeoVIM
 # See https://www.lazyvim.org/installation
+system "brew install neovim"
 
 ## LazyGit
 system "brew install lazygit"
@@ -49,7 +60,7 @@ system "brew install gh"
 system "brew install --cask tableplus"
 
 ## BalaEtcher
-system "brew install --cask balenaetcher"
+# system "brew install --cask balenaetcher"
 
 ## App Cleaner
 system "brew install --cask appcleaner"

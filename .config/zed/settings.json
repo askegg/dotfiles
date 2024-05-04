@@ -76,6 +76,7 @@
     "copilot": false
   },
   "assistant": {
+    "enabled": false,
     "button": false,
     "dock": "right",
     "default_open_ai_model": "gpt-3.5-turbo-0613"
