@@ -1,0 +1,37 @@
+#!/bin/bash
+
+clear
+
+echo "Updating ASDF"
+asdf update
+
+echo
+echo "Updating ASDF plugins"
+asdf plugin update --all
+
+echo
+echo "Brew update"
+brew upgrade --greedy-auto-updates
+
+echo
+echo "Brew upgrade"
+brew upgrade
+
+echo
+echo "Brew Doctor"
+brew doctor
+
+echo
+echo "Gem update system"
+gem update -- system
+
+echo
+echo "Gem update"
+gem update
+
+# echo
+# echo "Gem cleanup"
+# gem cleanup
+
+echo
+echo "Done."

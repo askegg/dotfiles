@@ -8,7 +8,7 @@
 # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 ## Git
-system "brew install git"
+ system "brew install git"
 
 ## For easy upgrade of applications in casks
 ## To use type "brew cu"
@@ -28,7 +28,7 @@ system "brew install tailwindcss"
 # Applications
 
 ## Wezterm
-system "brew install --cask wezterm"
+system "brew reinstall --cask wezterm --force"
 
 ## Termius
 # system "brew install --cask termius"
@@ -49,21 +49,27 @@ system "brew install neovim"
 ## LazyGit
 system "brew install lazygit"
 
+## The Unarchiver
+system "brew reinstall --cask the-unarchiver --force"
+
 ## Zed Editor
-system "brew install --cask zed"
+system "brew reinstall --cask zed --force"
 
 ## Github Desktop & Command Line
-system "brew install --cask github"
-system "brew install gh"
+system "brew reinstall --cask github --force"
+system "brew reinstall gh --force"
 
 ## TablePlus
-system "brew install --cask tableplus"
+system "brew reinstall --cask tableplus --force"
 
 ## BalaEtcher
-# system "brew install --cask balenaetcher"
+system "brew reinstall --cask balenaetcher --force"
+
+## Cleanshot
+system "brew reinstall --cask cleanshot --force"
 
 ## App Cleaner
-system "brew install --cask appcleaner"
+system "brew reinstall --cask appcleaner --force"
 
 # Configuration
 # TODO: Download configuration to correct destination.
