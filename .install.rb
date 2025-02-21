@@ -1,14 +1,25 @@
 # This script installs my most commonly used applications.
 # Useful for setting up a new machine.
 
-# System
-## Please install ASDF and Ruby first.
-
 ## Install Homebrew
 # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+## Install ASDF
+system "coreutils curl git libyaml asdf"
+
+## Install Rust
+system "asdf plugin add rust"
+system "asdf install rust latest"
+system "asdf global rust latest"
+
+# Install Ruby
+system "asdf plugin add ruby"
+system "export RUBY_CONFIGURE_OPTS=--enable-yjit"
+system "asdf install ruby 3.4.2"
+system "asdf set global ruby 3.4.2"
+
 ## Git
- system "brew install git"
+system "brew install git"
 
 ## For easy upgrade of applications in casks
 ## To use type "brew cu"
