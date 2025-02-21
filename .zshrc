@@ -40,9 +40,10 @@ alias z="zed"
 
 # Here is a trick to keep config files in Git.
 # Initialise an empty git repository: git init --bare $HOME/.myconf
-# Now set it to ignore untracked files: git config status.showUntrackedFiles no
+# Now set it to ignore untracked files: cd .myconf; git config status.showUntrackedFiles no
 # Configure a Github repo as the origin: git remote add origin git@github.com:askegg/dotfiles.git
-# With the "config" alias below we can now add files to the git repository:
+# With the "config" alias below we can now interact with the git repository:
+# config pull origin master
 # config add .zshrc
 # config commit -m "Added .zshrc"
 # config push
