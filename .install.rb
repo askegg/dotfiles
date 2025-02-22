@@ -4,8 +4,11 @@
 ## Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+## Install Ohmyzsh
+system "brew install zsh"
+
 ## Install ASDF
-system "coreutils curl git libyaml asdf"
+system "brew install coreutils curl git libyaml asdf"
 
 ## Install Rust
 system "asdf plugin add rust"
